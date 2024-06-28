@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.outer-container {
+    border: 2px solid green;
+}
+
+.inner-block {
+    border: 2px solid red;
+}
+
+.grid-parent {
+display: grid;
+/* явна сетка */
+/* grid */
+/* px, %, vw, fr, minmax(320px, 800px) */
+/* repeat (фыксована кылькысть чи автоматична (auto-fill/fit) ширина )*/
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) ;
+grid-template-rows: 100px;
+
+/* неявна сетка*/
+grid-auto-flow: row;
+grid-auto-rows: 75px;
+}
+
+.grid-child {
+
+}
